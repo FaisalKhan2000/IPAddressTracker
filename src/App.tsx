@@ -1,5 +1,6 @@
 import Display from "./components/Display";
 import Form from "./components/Form";
+import Map from "./components/Map";
 
 export default function App() {
   return (
@@ -9,7 +10,9 @@ export default function App() {
         <Form />
         <Display />
       </header>
-      <main></main>
+      <main className="map">
+        <Map />
+      </main>
     </div>
   );
 }

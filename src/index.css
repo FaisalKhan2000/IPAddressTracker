@@ -27,6 +27,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr;
   /* grid-template-rows: 40% 60%; */
+  height: 100vh;
 }
 
 /* Header */
@@ -111,6 +112,20 @@ body {
   font-weight: 600;
   letter-spacing: 0.2rem;
   padding-bottom: 10px;
+}
+
+map-container {
+  height: 100%;
+}
+
+.map {
+  grid-row: 2 / 3; /* Ensure the map takes the second row */
+  position: relative;
+  z-index: -1; /* Make sure the map is behind other elements */
+  height: 100%; /* Ensure it takes the remaining space */
+}
+map-container {
+  height: 100%;
 }
 
 /* Mobile devices with viewport width up to 375px */
